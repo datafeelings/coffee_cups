@@ -3,7 +3,12 @@ shinyUI (pageWithSidebar
  
          ( 
            headerPanel("Coffee Cups"), 
+           
            sidebarPanel(
+             p ("Nowadays coffee has become very popular everywhere in the world. 
+                However, drinking too much coffee can be unhealthy. 
+                You can check how your coffee consumption compares to the average level
+                in your country by answering these simple questions."),
              selectInput('country','Where do you live?', choices = a),
              p ("How many cups of coffee did you drink last week?"),
              sliderInput('mon', 'Coffee Cups on Monday',value = 0, min = 0, max = 12, step = 1),
